@@ -24,14 +24,6 @@
                 <h3>Mindestalter erforderlich: 18+</h3>
                 <p>Willkommen bei bwin. Diese Website ist ausschließlich für Personen über 18 Jahren zugänglich. Bitte bestätigen Sie Ihr Alter, um fortzufahren.</p>
                 
-                <!-- Birthday Date Select Option -->
-                <div class="birthday-form-field">
-                    <label for="birthday">
-                        <p>Bitte geben Sie Ihr Geburtsdatum ein:</p>
-                    </label>
-                    <input id="birthday" type="date" required>
-                </div>
-                
                 <div class="checkbox-form-field blurred">
                     <input id="regulation" type="checkbox" required>
                     <label for="regulation">
@@ -270,44 +262,6 @@ button.cookie-accept:hover {
             });
         });
     </script>
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
-    const confirmButton = document.querySelector(".cookie-accept");
-    const regulationCheckbox = document.getElementById("regulation");
-    const birthdayInput = document.getElementById("birthday");
-
-    confirmButton.disabled = true;
-
-    // Function to check age and validation
-    function validateForm() {
-        const isCheckboxChecked = regulationCheckbox.checked;
-        const isBirthdayValid = validateAge(birthdayInput.value);
-        confirmButton.disabled = !(isCheckboxChecked && isBirthdayValid);
-        confirmButton.style.backgroundColor = confirmButton.disabled ? "#ffffff" : "#ffe90a";
-    }
-
-    // Function to validate if the age is 18 or older
-    function validateAge(birthday) {
-        if (!birthday) return false; // No date selected
-        const today = new Date();
-        const birthDate = new Date(birthday);
-        const age = today.getFullYear() - birthDate.getFullYear();
-        const monthDiff = today.getMonth() - birthDate.getMonth();
-        const dayDiff = today.getDate() - birthDate.getDate();
-
-        // Adjust age if the current date is before the birthday this year
-        if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
-            return age - 1 >= 18;
-        }
-        return age >= 18;
-    }
-
-    // Listen for changes in the birthday input and checkbox
-    birthdayInput.addEventListener("input", validateForm);
-    regulationCheckbox.addEventListener("change", validateForm);
-});
-
-    </script>
 </head>
 
 <body>
@@ -427,6 +381,12 @@ button.cookie-accept:hover {
                 </li>
                 <li>
                     <a href="https://www.oswv.at/"><img src="images/OSWV_Logo_Square.png" class="f-6"></a>
+                </li>
+                <li>
+                    <a href="https://www.playsponsible.at/"><img src="images/gamcare-logo-svg-vector.svg" class="f-7"></a>
+                </li>
+                <li>
+                    <a href="https://www.gambleaware.org/"><img src="images/Gamble_Aware_White.png" class="f-1"></a>
                 </li>
                 <li>
                     <a href="https://www.egba.eu/"><img src="images/bwin-egba-brand-logo-gambling.webp" class="f-1"></a>
