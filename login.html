@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Erleben Sie spannende Sportwetten mit echtem Geld und die besten Promotionen bei Bwin. Ihre Plattform für unkomplizierte Sportwetten.">
+    <link rel="canonical" href="https://promo.bwin.de/de/promo/offers/p/slots">
+    <meta name="keywords" content="Bwin, Sportwetten, echtes Geld, Sport Promotionen, einfache Sportwetten">
+    <title>Bwin | Aktionen | Sportwetten mit echtem Geld leicht gemacht</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="bg-white">
+        <form action="#" class="form" id="registrationForm">
+            <h1 class="text-center">Lass uns loslegen</h1>
+            <div class="close-icon" id="closeForm">&#10005;</div>
+            <p class="f-p-area">Willkommen bei bwin E-Mail und Passwort eingeben, Datenschutz ist wichtig. Datenschutzerklärung lesen.</p>
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <label for="email">E-Mail<span>*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Passwort<span>*</span></label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Abschicken" class="btn" id="submitButton">
+                </div>
+            </div>
+        </form>
+    </section>
+    <style>
+        input,label{display:block;color:#f5f5f5ef}input#optin,input#regulation{top:3px;width:20px}.btn,.text-center{text-align:center}.btn,h1.text-center{text-transform:uppercase}p.p-t-1{font-weight:300;font-size:14px;line-height:normal;margin:5px 0;color:#f5f5f5d6}label>span{color:#ffd50c;font-size:17px}:root{--primary-color:#ffd50c}*,::after,::before{box-sizing:border-box}.recaptcha-text{font-size:11px;padding:8px 0;color:#d3cdcdc7}.bg-white{font-family:"Exo 2",serif;margin:0;display:grid;place-items:center;min-height:100vh}p.f-p-area{font-size:14.5px;font-weight:400;line-height:20px;color:#f5f5f5d6;padding:8px 0}label{margin-bottom:.5rem;font-weight:600;font-size:.9rem}input{width:100%;padding:.5rem .75rem;border:1px solid #ccc;border-radius:.25rem;background:0 0;outline:0}.close-icon,.progress-step{border-radius:50%;display:flex}.width-50{width:50%}.ml-auto{margin-left:auto}h1.text-center{font-size:17px;color:#fff;font-weight:600;padding-bottom:12px}.close-icon{position:absolute;top:15px;right:15px;width:24px;height:24px;justify-content:center;align-items:center;color:#fff;cursor:pointer;font-size:20px}.close-icon:hover{color:#d1cfcf}.progressbar{position:relative;display:flex;justify-content:space-between;counter-reset:step;margin:12px auto}.progress,.progressbar::before{content:'';position:absolute;top:50%;transform:translateY(-50%);height:6px;width:100%;background-color:#dcdcdc;z-index:1}.form,input#optin,input#regulation{position:relative}.progress{background-color:#ffd50c;width:0%}.progress-step{width:20px;height:20px;background-color:#dcdcdc;justify-content:center;align-items:center;font-weight:700;font-size:10px;color:#000000a6;z-index:11}.checkbox-form-field.blurred{display:flex;align-items:baseline;justify-content:flex-start;gap:4px}input#regulation{padding:0;margin-left:-5px;left:3px}.progress-step::before{counter-increment:step;content:counter(step)}.progress-step::after{content:attr(data-title);position:absolute;top:calc(100% + .5rem);font-size:.85rem;color:#ffd50c;font-weight:100;letter-spacing:.4px}.progress-step-active{background-color:#ffd50c;color:#000}.form{width:clamp(320px,30%,430px);margin:0 auto;border-radius:.35rem;padding:1.5rem;box-shadow:0 5px 45px 5px rgba(220,220,221,.096);background-color:#000}.form-step{display:none;animation:.5s animate;transform-origin:top}@keyframes animate{from{transform:scale(1,0);opacity:0}to{transform:scale(1,1);opacity:1}}.form-step-active{display:block}.input-group{margin:1rem 0}.btns-group{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}.btn{padding:.75rem;display:block;text-decoration:none;background-color:#ffd50c;color:#000;border-radius:.25rem;cursor:pointer;transition:.3s;font-size:16px;font-weight:600;margin-top:1rem;outline:0;border:0}.btn:hover{box-shadow:0 0 0 2px #000,0 0 0 3px var(--primary-color)}.recaptcha-text>a,p.p-t-1>a{color:#fff}a.btn.btn-prev{background:#4e4646;color:#fff}a.btn.btn-prev:hover{box-shadow:0 0 0 2px #000,0 0 0 3px #fff}
+    </style>
+    <script>
+        const prevBtns = document.querySelectorAll(".btn-prev");
+            const nextBtns = document.querySelectorAll(".btn-next");
+            const progress = document.getElementById("progress");
+            const formSteps = document.querySelectorAll(".form-step");
+            const progressSteps = document.querySelectorAll(".progress-step");
+
+            let formStepsNum = 0;
+
+            nextBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    formStepsNum++;
+                    updateFormSteps();
+                    updateProgressbar();
+                });
+            });
+
+            prevBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    formStepsNum--;
+                    updateFormSteps();
+                    updateProgressbar();
+                });
+            });
+
+            function updateFormSteps() {
+                formSteps.forEach((formStep) => {
+                    formStep.classList.contains("form-step-active") &&
+                        formStep.classList.remove("form-step-active");
+                });
+
+                formSteps[formStepsNum].classList.add("form-step-active");
+            }
+
+            function updateProgressbar() {
+                progressSteps.forEach((progressStep, idx) => {
+                    if (idx < formStepsNum + 1) {
+                        progressStep.classList.add("progress-step-active");
+                    }
+                    else {
+                        progressStep.classList.remove("progress-step-active");
+                    }
+                });
+
+                const progressActive = document.querySelectorAll(".progress-step-active");
+
+                progress.style.width =
+                ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+            }
+    </script>
+    <script>
+        const closeBtn = document.getElementById('closeForm');
+    
+            closeBtn.addEventListener('click', () => {
+                window.location.href = '/'; // Redirect to home page
+            });
+    </script>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                // Add your validation logic here
+                const username = document.getElementById('username').value.trim();
+                const position = document.getElementById('position').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                
+                if (username === '' || position === '' || phone === '' || email === '' || password === '' || confirmPassword === '') {
+                    alert('Bitte fülle alle Felder aus.');
+                    return;
+                }
+            
+                if (password !== confirmPassword) {
+                    alert('Die Passwörter stimmen nicht überein.');
+                    return;
+                }
+                
+            });
+    </script>
+</body>
+
+</html>
