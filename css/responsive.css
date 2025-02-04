@@ -3,6 +3,11 @@
       font-size: 30px;
       width: 100%;
     }
+    .customer-support-footer {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
     .disclaimer > p {
       font-size: 11px;
       line-height: 16px;
