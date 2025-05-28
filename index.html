@@ -23,191 +23,175 @@
                 </div>
                 <h3>Mindestalter erforderlich: 18+</h3>
                 <p>Willkommen bei bwin. Diese Website ist ausschließlich für Personen über 18 Jahren zugänglich. Bitte bestätigen Sie Ihr Alter, um fortzufahren.</p>
-                
-                <div class="checkbox-form-field blurred">
-                    <input id="regulation" type="checkbox" required>
-                    <label for="regulation">
-                        <p class="p-t-1">Ich bestätige, dass ich mindestens 18 Jahre alt bin.</p>
-                        <i class="portal-icon portal-icon-check form-field-icon"></i>
-                    </label>
-                </div>
+                <p>Ich bestätige, dass ich mindestens 18 Jahre alt bin.</p>
             </div>
             <div class="ageverfication-btn">
                 <div class="ageverfication-button-area">
-                    <button onclick="acceptCookies()" class="cookie-accept" disabled>Bestätigen</button>
+                    <button onclick="acceptCookies()" class="cookie-accept">Bestätigen</button>
                 </div>
             </div>
         </div>
     </div>
-    
-      <style>
+
+    <style>
         .birthday-form-field {
-    margin-bottom: 15px;
-    text-align: left;
-}
-.birthday-form-field label p {
-    font-size: 15px;
-    line-height: normal;
-    color: #ffffff;
-    margin-bottom: 8px;
-    font-weight: 600;
-    padding-top: 15px;
-}
-.birthday-form-field input[type="date"] {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #ffffff;
-    color: #000000;
-}
-.birthday-form-field input[type="date"]:focus {
-    outline: none;
-    border-color: #ffd50c;
-    box-shadow: 0 0 5px #ffd50c;
-}
-
-        .checkbox-form-field.blurred {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-.age-popup {
-    display: none;
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    padding: 20px;
-    top: 50%;
-    z-index: 1000;
-    color: #ffffff;
-    box-shadow: 0 -10px 40px 5px #e4e2e225;
-    transform: translateY(-50%);
-}
-.ageverfication-Overlay,
-.ageverfication-Overlay-2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 999;
-  display: none;
-}
-.age-popup.show {
-  display: block;
-  max-width: 350px;
-  margin: 0 auto;
-  padding: 15px 20px 25px;
-}
-.warningText > h3 {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 15px 0 12px;
-}
-.warningText > p {
-  font-style: normal;
-  margin: 8px 0;
-  font-size: 14.5px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #f5f5f5d6;
-}
-input#regulation {
-  position: relative;
-  top: 2px;
-}
-p.p-t-1 {
-  font-size: 14px;
-  line-height: normal;
-  padding: 12px 0 5px;
-  color: #f5f5f5d6;
-}
-.warn-img > img {
-  width: 80px;
-}
-.ageverfication-button-area button {
-  font-size: 17px;
-  padding: 8px 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  user-select: none;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  border: none;
-  outline: 0;
-  margin: 10px 0 0;
-  background: #ffd50c;
-  color: #000000;
-  width: 100%;
-}
-button.cookie-accept:hover {
-  background: #000;
-}
-.ageverfication-Overlay {
-  width: 100%;
-  background: #000000ef;
-}
-.ageverfication-Overlay-2 {
-  width: 100%;
-  background: #000000ef;
-}
-.show-overlay,
-.show-overlay-2 {
-  display: block;
-}
-@media only screen and (max-width: 600px) and (min-width: 320px) {
-  .age-popup.show {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 15px;
-    padding: 20px 10px;
-  }
-  .ageverfication-button-area button {
-    font-size: 16px;
-  }
-  .warn-img > img {
-    width: 70px;
-  }
-  .ageverfication-Overlay {
-    display: none;
-  }
-  .warningText > h3 {
-    font-size: 19px;
-  }
-}
-@media only screen and (max-width: 850px) and (min-width: 768px) {
-  .age-popup.show {
-    margin: 0 auto;
-  }
-  .ageverfication-Overlay-2 {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .ageverfication-Overlay-2 {
-    display: none;
-  }
-}
-
-    </style>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        if (!getCookie("acceptedCookies")) {
-            // Load background image of the popup first
-            document.querySelector(".ageverfication-Overlay").classList.add("show-overlay");
-            document.querySelector(".ageverfication-Overlay-2").classList.add("show-overlay-2");
-            document.getElementById("cookiePopup").classList.add("show");
-        } else {
-            // If cookies have already been accepted, remove the popup and overlay
-            document.querySelector(".ageverfication-Overlay").classList.remove("show-overlay");
-            document.querySelector(".ageverfication-Overlay-2").classList.remove("show-overlay-2");
-            document.getElementById("cookiePopup").classList.remove("show");
+            margin-bottom: 15px;
+            text-align: left;
         }
+        .birthday-form-field label p {
+            font-size: 15px;
+            line-height: normal;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+        .birthday-form-field input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #000000;
+        }
+        .birthday-form-field input[type="date"]:focus {
+            outline: none;
+            border-color: #ffd50c;
+            box-shadow: 0 0 5px #ffd50c;
+        }
+        .age-popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            background-color: #000000;
+            padding: 20px;
+            top: 50%;
+            z-index: 1000;
+            color: #ffffff;
+            box-shadow: 0 -10px 40px 5px #e4e2e225;
+            transform: translateY(-50%);
+        }
+        .ageverfication-Overlay,
+        .ageverfication-Overlay-2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: 999;
+            display: none;
+        }
+        .age-popup.show {
+            display: block;
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 15px 20px 25px;
+        }
+        .warningText > h3 {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 15px 0 12px;
+        }
+        .warningText > p {
+            font-style: normal;
+            margin: 8px 0;
+            font-size: 14.5px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #f5f5f5d6;
+        }
+        p.p-t-1 {
+            font-size: 14px;
+            line-height: normal;
+            padding: 12px 0 5px;
+            color: #f5f5f5d6;
+        }
+        .warn-img > img {
+            width: 80px;
+        }
+        .ageverfication-button-area button {
+            font-size: 17px;
+            padding: 8px 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            user-select: none;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            border: none;
+            outline: 0;
+            margin: 10px 0 0;
+            background: #ffffff;
+            color: #000000;
+            width: 100%;
+        }
+        button.cookie-accept:hover {
+            background: #ffd50c;
+            color: #000000;
+        }
+        .ageverfication-Overlay {
+            width: 100%;
+            background: #000000ef;
+        }
+        .ageverfication-Overlay-2 {
+            width: 100%;
+            background: #000000ef;
+        }
+        .show-overlay,
+        .show-overlay-2 {
+            display: block;
+        }
+        @media only screen and (max-width: 600px) and (min-width: 320px) {
+            .age-popup.show {
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0 15px;
+                padding: 20px 10px;
+            }
+            .ageverfication-button-area button {
+                font-size: 16px;
+            }
+            .warn-img > img {
+                width: 70px;
+            }
+            .ageverfication-Overlay {
+                display: none;
+            }
+            .warningText > h3 {
+                font-size: 19px;
+            }
+        }
+        @media only screen and (max-width: 850px) and (min-width: 768px) {
+            .age-popup.show {
+                margin: 0 auto;
+            }
+            .ageverfication-Overlay-2 {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1024px) {
+            .ageverfication-Overlay-2 {
+                display: none;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!getCookie("acceptedCookies")) {
+                // Load background image of the popup first
+                document.querySelector(".ageverfication-Overlay").classList.add("show-overlay");
+                document.querySelector(".ageverfication-Overlay-2").classList.add("show-overlay-2");
+                document.getElementById("cookiePopup").classList.add("show");
+            } else {
+                // If cookies have already been accepted, remove the popup and overlay
+                document.querySelector(".ageverfication-Overlay").classList.remove("show-overlay");
+                document.querySelector(".ageverfication-Overlay-2").classList.remove("show-overlay-2");
+                document.getElementById("cookiePopup").classList.remove("show");
+            }
         });
         function acceptCookies() {
             document.getElementById("cookiePopup").classList.remove("show");
@@ -230,38 +214,18 @@ button.cookie-accept:hover {
             }
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
-         function getCookie(name) {
+        function getCookie(name) {
             var nameEQ = name + "=";
             var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-                }
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
             return null;
-         }
+        }
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const confirmButton = document.querySelector(".cookie-accept");
-            const regulationCheckbox = document.getElementById("regulation");
 
-            // Initially disable the button and set default color
-            confirmButton.disabled = true;
-            confirmButton.style.backgroundColor = "#ffffff"; // Default red color
-
-            // Listen for checkbox state change
-            regulationCheckbox.addEventListener("change", function () {
-                if (regulationCheckbox.checked) {
-                    confirmButton.disabled = false;
-                    confirmButton.style.backgroundColor = "#ffe90a"; // Change to green when active
-                } else {
-                    confirmButton.disabled = true;
-                    confirmButton.style.backgroundColor = "#ffffff"; // Revert to red when inactive
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -273,7 +237,7 @@ button.cookie-accept:hover {
             <div class="HomeFlex">
                 <div class="Home_img">
                     <a href="/">
-                        <img src="images/bwin-logo.svg">
+                        <img src="images/bwin-logo.png">
                     </a>
                 </div>
                 <div class="Home_btn">
@@ -369,19 +333,19 @@ button.cookie-accept:hover {
                 </ul>
             </div>
 
-            <p class="footer-p-a pb-4">Rechtsgrundlage für den Abschluss, die Vermittlung und Durchführung von Sportwetten über das Portal www.bwin.com/at und www.bwinpromo.com ist das Niederösterreichische Wettgesetz (NÖ WettG) vom 27. Januar 2011, LGBl. Nr. F58/2011, Lizenz ausgestellt in Niederösterreich von der Landesregierung mit der Nummer IVW1-Wett- 47/001-2011.</p>
+            <p class="footer-p-a pb-4">Diese Plattform wird gemäß den geltenden lokalen Gesetzen und Vorschriften betrieben. Alle Dienstleistungen unterliegen den jeweiligen Nutzungsbedingungen. Für weitere Informationen kontaktieren Sie bitte unser Support-Team.</p>
         </div>
         <div class="customer-section container">
             <h5>Kundenservice</h5>
             <div class="customer-support-footer">
-                <div class="customer-info">
+                <!-- <div class="customer-info">
                     <div class="cutomer-icon">
                         <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
                     </div>
                     <div class="cutomer-address-text">
                         <a href="tel:+35020078700">+3 502 007 8700</a>
                     </div>
-                </div>
+                </div> -->
     
                 <div class="customer-info">
                     <div class="cutomer-icon">
@@ -420,7 +384,7 @@ button.cookie-accept:hover {
         </div>
         <div class="container text-center">
             <p class="footer-copyright pt-4">
-                Copyright © 2003-2025 Bwin.Party Digital Entertainment Plc konzessioniert durch das <a href="https://www.bmf.gv.at/themen/gluecksspiel-spielerschutz.html">Bundesministerium für Finanzen</a> Spieleseite der Österreichischen Lotterien
+                2003–2025 <a href="https://bwinpromo.at/" target="_blank">Bwinpromo.at</a> – All rights reserved.
             </p>
         </div>
     </div>
