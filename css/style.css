@@ -1,3 +1,10 @@
+@media screen and (min-width:1200px){
+    .container{
+        width: 94% !important;
+        max-width: 1365px !important;
+        margin: 0 auto;
+    }
+}
 .HomeFlex,.Zjd450w_dP_f {
     align-items: center;
     display: flex
@@ -102,7 +109,7 @@ body::before {
 }
 
 .ContentArea {
-    padding: 60px 0 0
+    padding: 50px 0 0;
 }
 
 .content-text>h1 {
@@ -402,4 +409,19 @@ img.f-4 {
 
 .cutomer-address-text>a:hover {
     color: #b9b7b7
+}
+.promo-wrapper > a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 896px) and (min-width: 601px) {
+    .contact-social>ul {
+        display: flex;
+        list-style: none;
+        align-items: baseline;
+        margin: 0;
+        padding: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

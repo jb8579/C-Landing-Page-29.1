@@ -1,0 +1,476 @@
+
+.bhtnoskj-section{
+    padding: 35px 0px 20px 0px;
+}
+.promobanner-part h1{
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 5px;
+}
+.promobanner-part p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+}
+.bhtnoskj-area {
+    padding: 40px 0px 40px 0px;
+    overflow: hidden;
+}
+.promopart{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    align-items: center;
+    justify-content: space-around;
+    grid-row-gap: 35px;
+}
+.promopart {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    align-items: center;
+    justify-content: space-around;
+    grid-row-gap: 35px;
+}
+  
+.bhtnoskj-box {
+    height: 305px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+  
+.promoimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+}
+
+.innterpromo {
+    position: relative;
+    z-index: 999;
+    padding: 30px;
+    width: 100%;
+    bottom: -18px;
+}
+
+.bhtnoskj-wrapper a{
+    text-decoration: none;
+}  
+
+.badge {
+    position: relative;
+    z-index: 999;
+}
+.badge img {
+    width: 62px;
+    position: absolute;
+    top: -28px;
+    left: 24px;
+    margin: 0px;
+    height: auto;
+    display: block;
+}
+.innterpromo h2 {
+    color: #FFD50A;
+    font-family: "Exo 2";
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+.bhtnoskj-box.bhtnoskj-box-5 {
+    height: 348px;
+}  
+.innterpromo p {
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 48px;
+}
+.bhtnoskj-button-area {
+    position: relative;
+    bottom: 120px; 
+    z-index: 999;
+    margin: 0px 30px;
+}
+
+a.get-bonus-btn {
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    width: 175px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    transition: 0.3s all ease;
+    position: relative;
+    border-radius: 9px;
+    background: #FFD50A;
+    margin-top: 20px;
+}
+
+
+
+a.get-bonus-btn:hover {
+    color: #000;
+    background: #dab604;
+    letter-spacing: 0.6px;
+}
+
+.bhtnoskj-wrapper {
+    height: 315px;
+}  
+.heroteam-part {
+    height: 346px;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+  
+.heroteamimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+}
+  
+.heroteamimg2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9;
+    top: 0;
+    display: none;
+}
+  
+.innerheroteam {
+    position: absolute;
+    z-index: 999;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 105px;
+}
+  
+.innerheroteam h2 {
+    color: #FFD50A;
+    font-family: "Exo 2";
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 55px; 
+    margin-bottom: 15px;
+}
+  
+  
+.innerheroteam p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 55px; 
+}
+  
+.innerheroteam button {
+    color: #000;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 180px;
+    height: 48px;
+    display: block;
+    line-height: 48px;
+    text-align: center;
+    transition: 0.3s all ease;
+    margin-top: 20px;
+    position: relative;
+    z-index: 999;
+}
+.bhtnoskj-button-area a{
+    text-decoration: none;
+}
+@media screen and (max-width: 868px) and (min-width: 767px){
+    header.header-area.sm-part-none {
+        display: none;
+    }
+    .bhtnoskj-wrapper {
+        height: 345px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header.header-area.sm-part-none {
+        display: none;
+    }
+    .bhtnoskj-section {
+        padding: 20px 0px 20px 0px;
+    }
+    .bhtnoskj-area {
+        padding: 12px 0px 0px 0px;
+        overflow: hidden;
+    }
+    .promobanner-part h1 {
+        font-size: 30px;
+        line-height: normal;
+    }
+    .promobanner-part p {
+        font-size: 15px;
+        line-height: normal;
+    }
+    .topheader-right ul li a img {
+        width: 20px;
+        display: block;
+    }
+    
+    .promopart {
+        display: block;
+        gap: 0px;
+    }
+    .bhtnoskj-box {
+        height: 225px;
+    }
+    .badge img {
+        width: 40px;
+        top: -16px;
+        left: 8px;
+    }
+    .bhtnoskj-wrapper {
+        height: 244px;
+    }
+    a.get-bonus-btn {
+        font-size: 16px;
+        line-height: 40px;
+        width: 150px;
+        height: 40px;
+        margin-top: 38px;
+    }
+    .bhtnoskj-button-area {
+        margin: 0px 15px;
+    }
+    .heroteamimg {
+        display: none;
+    }
+    .heroteamimg2 {
+        display: block;
+        object-fit: unset;
+    }
+    .heroteam-part {
+        margin-top: 0px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 {
+        bottom: 208px;
+    }
+    p.innterpromo5 {
+        font-size: 22px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 h2 {
+        font-size: 30px;
+    }
+    .bhtnoskj-button-area.bt-5 {
+        position: relative;
+        margin-top: -115px;
+    }
+    .bhtnoskj-box.bhtnoskj-box-5 {
+        height: 346px;
+    }
+}
+
+@media screen and (max-width: 896px) and (min-width: 601px) {
+    .promopart {
+        display: block;
+    }
+    .bhtnoskj-box {
+        margin-bottom: 30px;
+    }
+    .heroteamimg {
+        display: none;
+    }
+    .heroteamimg2 {
+        position: absolute;
+        width: 100%;
+        height: 499px;
+        z-index: 9;
+        top: 0;
+        display: block;
+        object-fit: unset;
+    }
+    .heroteam-part {
+        margin-top: 0px;
+    }
+    .heroteam-part.bhtnoskj-box-5 {
+        height: 496px;
+    }
+
+    .contact-social>ul {
+        display: flex;
+        list-style: none;
+        align-items: baseline;
+        margin: 0;
+        padding: 15px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1250px) and (min-width: 897px) {
+    .innterpromo h2 {
+        font-size: 32px;
+        padding: 30px 0px 0px 0px;
+        line-height: 38px;
+    }
+    .innterpromo p {
+        font-size: 28px;
+        line-height: 50px;
+    }
+    .bhtnoskj-box {
+        height: 270px;
+    }
+    .innterpromo a {
+        margin-top: 10px;
+    }
+    .heroteam-part {
+        height: 300px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 h2 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .bhtnoskj-wrapper {
+        height: 275px;
+    }
+    .innterpromo {
+        bottom: 0px;
+    }
+    a.get-bonus-btn {
+        margin-top: 25px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 {
+        bottom: 115px;
+    }
+    .bhtnoskj-button-area.bt-5 {
+        bottom: 155px;
+    }
+    .heroteam-part.bhtnoskj-box-5 {
+        height: 350px;
+    }
+    .bhtnoskj-box.bhtnoskj-box-5 {
+        height: 350px;
+    }
+    .promobanner-part h1 {
+        font-size: 42px;
+    }
+    .promobanner-part p {
+        font-size: 17px;
+    }
+    .topbg {
+        height: 134px;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 380px){
+    .innterpromo h2 {
+        font-size: 32px;
+        line-height: 28px;
+    }
+    .innterpromo p {
+        font-size: 21px;
+        line-height: 48px;
+        padding: 0px;
+    }
+    p.innterpromo5{
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0px;
+    }
+    .innterpromo a {
+        margin-top: 8px;
+    }
+    .innterpromo {
+        padding: 15px 15px;
+        bottom: -20px;
+    }
+    .Home_img>a>img {
+        max-width: 100%;
+        height: 40px;
+        display: block;
+    }
+}
+@media screen and (max-width: 390px) and (min-width: 300px){
+    .bhtnoskj-box {
+        height: 202px;
+    }
+    .innterpromo p {
+        font-size: 18px;
+        font-style: normal;
+        line-height: 30px;
+    }
+    .innterpromo h2 {
+        font-size: 24px;
+        line-height: normal;
+        padding: 0px;
+    }
+    a.get-bonus-btn {
+        font-size: 16px;
+        width: 136px;
+        height: 38px;
+        line-height: 38px;
+        margin-top: 2px;
+    }
+    .innterpromo {
+        position: relative;
+        z-index: 999;
+        padding: 30px;
+        width: 100%;
+        bottom: -10px;
+    }
+    .bhtnoskj-button-area {
+        bottom: 80px;
+    }
+    .innterpromo {
+        padding: 30px 15px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 {
+        bottom: -12px;
+    }
+    .innerheroteam.innterpromo.innterbhtnoskj-5 h2 {
+        margin: 0px;
+    }
+    p.innterpromo5 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .bhtnoskj-button-area.bt-5 {
+        position: relative;
+        margin-top: -127px;
+    }
+    .bhtnoskj-wrapper {
+        height: 225px;
+    }
+    .Home_img>a>img {
+        max-width: 100%;
+        height: 40px;
+        display: block;
+    }
+}
