@@ -305,7 +305,7 @@ img.f-4 {
     margin-bottom: 20px
 }
 
-.card-content .btn {
+.card-content a .btn {
     background: #ffd50c!important;
     border: none;
     color: #000;
@@ -314,11 +314,11 @@ img.f-4 {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
-    font-weight: 600
+    font-weight: 600;
 }
 
-.card-content .btn:hover {
-    background: #d1a804
+.card-content a .btn:hover {
+    background: #ac8a05
 }
 
 .sub-text {
