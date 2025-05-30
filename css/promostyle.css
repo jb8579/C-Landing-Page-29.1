@@ -47,8 +47,11 @@
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    transition: transform .3s;
 }
-  
+.bhtnoskj-box:hover {
+    transform: scale(1.02);
+} 
 .promoimg {
     position: absolute;
     width: 100%;
@@ -246,8 +249,22 @@ a.get-bonus-btn:hover {
         display: block;
         gap: 0px;
     }
-    .bhtnoskj-box {
+    .bhtnoskj-box.bhtnoskj-box-1 {
+        border: 1px solid transparent;
+        border-image: linear-gradient(to right, #ffd50a, #935d13);
+        border-image-slice: 1;
+    }
+    .bhtnoskj-box{
         height: 225px;
+        border-radius: 0px;
+        border: 1px solid transparent;
+        border-image: linear-gradient(to right, #e3eb77, #935d13);
+        border-image-slice: 1;
+    }
+    .bhtnoskj-box:hover{
+        border: 1px solid transparent;
+        border-image: linear-gradient(to right, #ffd50a, #935d13);
+        border-image-slice: 1;
     }
     .badge img {
         width: 40px;
@@ -411,11 +428,6 @@ a.get-bonus-btn:hover {
         padding: 15px 15px;
         bottom: -20px;
     }
-    .Home_img>a>img {
-        max-width: 100%;
-        height: 40px;
-        display: block;
-    }
 }
 @media screen and (max-width: 390px) and (min-width: 300px){
     .bhtnoskj-box {
@@ -427,7 +439,7 @@ a.get-bonus-btn:hover {
         line-height: 30px;
     }
     .innterpromo h2 {
-        font-size: 24px;
+        font-size: 27px;
         line-height: normal;
         padding: 0px;
     }
@@ -443,8 +455,9 @@ a.get-bonus-btn:hover {
         z-index: 999;
         padding: 30px;
         width: 100%;
-        bottom: -10px;
+        bottom: 4px;
     }
+
     .bhtnoskj-button-area {
         bottom: 80px;
     }
